@@ -1,7 +1,6 @@
 package br.nagualcode.locacoes.config;
 
-import brave.Tracing;
-import brave.spring.rabbit.SpringRabbitTracing;
+
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -9,6 +8,8 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import brave.Tracing;
+import brave.spring.rabbit.SpringRabbitTracing;
 
 @Configuration
 public class RabbitMQConfig {
